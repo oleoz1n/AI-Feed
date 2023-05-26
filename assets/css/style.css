@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+}
+
+
+section {
+    background-color: #abd1c6;
+    margin-top: 56px;
+}
+
+.section-h {
+    
+    padding: 8px;
+}
+
+.section-h h1 {
+    font-weight: 700;
+}
+
+.section-h p {
+    text-indent: 16px;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #004643;
+    width: 100%;
+    height: 56px;
+    top: 0;
+    position: fixed;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.div-logo {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#logo {
+    width: 56px;
+    height: 56px;
+}
+
+#menu-h ul {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    padding-left: 5px;
+    background-color: #004643;
+    width: 180px;
+}
+
+#menu-h ul:hover {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    padding-left: 5px;
+    background-color: #004643;
+    width: 100%;
+}
+
+
+.barrinha-menu {
+    height: 4px;
+    width: 40px;
+    background-color: #fff;
+    display: block;
+    margin: 8px;
+    transition: width 2s ease, margin-left 2s ease;
+  }
+
+div:hover .barrinha-menu:nth-child(2) {
+    margin-left: 15px;
+  }
+  
+  div:hover .barrinha-menu {
+    width: 35px;
+    
+    transition: width 2s ease, margin-left 2s ease;
+  }
+
+
+
+#menu-h ul li {
+    text-align: center;
+    opacity : 0;
+    opacity : 0; transition:opacity 1s;
+    display: none;
+}
+
+#menu-h ul:hover li {
+    text-align: center;
+    opacity : 1;
+    display: block;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media (min-width: 768px){
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background-color: #004643;
+        width: 100%;
+        height: 64px;
+    }
+
+    .div-logo {
+        width: 64px;
+        display: flex;
+        justify-content: start;
+    }
+
+#menu-h{
+    background-color: #004643;
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+#menu-h ul:hover{
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+
+#menu-h ul div {
+    display: none;
+}
+
+#menu-h ul li {
+    opacity : 1;
+    display: inline;
+}
+
+#menu-h ul:hover li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: #f9bc60c5;
+}
+
+section {
+    margin-top: 64px;
+}
+
+}
