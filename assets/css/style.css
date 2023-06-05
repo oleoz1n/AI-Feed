@@ -283,6 +283,17 @@ footer p {
 
 .card-cultivo {
   border-radius: 3px;
+  background-color: #004643;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.cards-cultivo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card-cultivo p {
@@ -297,6 +308,7 @@ footer p {
   width: 100px;
   height: 100px;
   border-radius: 10px;
+  border: black 4px solid;
 }
 
 .h2-img {
@@ -504,10 +516,8 @@ footer p {
     flex-wrap: wrap;
   }
   .card-cultivo {
-    background-color: #004643;
     width: 100%;
     padding: 2rem;
-    margin: 10px;
   }
   .card-cultivo img {
     width: 100px;
