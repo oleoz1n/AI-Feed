@@ -272,6 +272,14 @@ footer p {
   margin: 0.5rem;
 }
 
+
+
+/* Cultivo */
+.main-cultivo {
+  background-color: var(--color1);
+  padding: 1rem;
+}
+
 /* Desktop and tablets */
 @media (min-width: 768px) {
   body {
@@ -454,5 +462,16 @@ footer p {
     -moz-box-shadow: inset 0px 0px 300px -144px rgba(0, 0, 0, 0.75);
     box-shadow: inset 0px 0px 300px -144px rgba(0, 0, 0, 0.75);
   }
-  /**/
+  /* Cultivo */
+.main-cultivo {
+  background-color: var(--color1);
+  padding: 5rem;
+}
+
+.cards-cultivo {
+  
+}
+.card-cultivo {
+  background-color: #004643;
+}
 }
