@@ -1,328 +1,451 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  word-wrap: break-word;
 }
-
+/* Body */
 body {
-    margin-top: 56px;
+  margin-top: 56px;
 }
 
-.section-h-1, .section-h-3 {
-    background-color: #abd1c6;
-}
-
-.section-h-2 {
-    background-color: #224442;
-}
-
-.section-h-1, .section-h-2, .section-h-3 {
-    padding: 48px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    align-items: center;
-}
-.section-h-1 h1, .section-h-3 h1 {
-    color: #001e1d;
-}
-
-.section-h-2 h1 {
-    color: #fffffe;
-}
-
+/*h1, p e li padrões*/
 h1 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.section-h-1 img, .section-h-2 img, .section-h-3 img  {
-    width: 250px;
-    border-radius: 8px;
-}
-
-.section-h-1 p, .section-h-3 p {
-    color: #0f3433;
-}
-
-.section-h-2 p {
-    color: #c1dad3;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 p {
-    font-size: 24px;
-    font-weight: 400;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+li {
+  font-size: 20px;
+  font-weight: 400;
+}
+/* Sections HOME */
+.section-h-1,
+.section-h-3 {
+  background-color: #abd1c6;
+}
+
+.section-h-2 {
+  background-color: #224442;
+}
+
+.section-h-1,
+.section-h-2,
+.section-h-3 {
+  padding: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+}
+.section-h-1 h1,
+.section-h-3 h1 {
+  color: #001e1d;
+}
+
+.section-h-2 h1 {
+  color: #fffffe;
+}
+
+.section-h-1 img,
+.section-h-2 img,
+.section-h-3 img {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.section-h-1 p,
+.section-h-3 p {
+  color: #0f3433;
+}
+
+.section-h-2 p {
+  color: #c1dad3;
 }
 
 .conteudo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 1rem;
 }
 
 .img-rounded {
-    display: none;
+  display: none;
 }
 
 .logo-rounded {
-    width: 55px;
-    height: 60px;
+  width: 55px;
+  height: 60px;
 }
 
-
-
-
+/* Header */
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #004643;
-    width: 100%;
-    height: 56px;
-    top: 0;
-    position: fixed;
-    z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #004643;
+  width: 100%;
+  height: 56px;
+  top: 0;
+  position: fixed;
+  z-index: 10;
 }
 
-
+/* Nav - Header */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: end;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
-
 
 .div-logo {
-    width: 100%;
-    display: flex;
-    justify-content: end;
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 #logo {
-    width: 56px;
-    height: 56px;
+  width: 56px;
+  height: 56px;
 }
 
+/* Menu Smartphone */
+
 #menu-h ul {
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    top: 5px;
-    left: 0px;
-    padding-left: 5px;
-    background-color: #004643;
-    width: 180px;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  padding-left: 5px;
+  background-color: #004643;
+  width: 180px;
 }
 
 #menu-h ul:hover {
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    top: 5px;
-    left: 0px;
-    padding-left: 5px;
-    background-color: #004643;
-    width: 100%;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  padding-left: 5px;
+  background-color: #004643;
+  width: 100%;
 }
 
-
 .barrinha-menu {
-    height: 4px;
-    width: 40px;
-    background-color: #fff;
-    display: block;
-    margin: 8px;
-    transition: width 2s ease, margin-left 2s ease;
-  }
+  height: 4px;
+  width: 40px;
+  background-color: #fff;
+  display: block;
+  margin: 8px;
+  transition: width 2s ease, margin-left 2s ease;
+}
 
 div:hover .barrinha-menu:nth-child(2) {
-    margin-left: 15px;
-  }
-  
-  div:hover .barrinha-menu {
-    width: 35px;
-    
-    transition: width 2s ease, margin-left 2s ease;
-  }
+  margin-left: 15px;
+}
 
+div:hover .barrinha-menu {
+  width: 35px;
 
+  transition: width 2s ease, margin-left 2s ease;
+}
 
 #menu-h ul li {
-    text-align: center;
-    opacity : 0;
-    opacity : 0; transition:opacity 1s;
-    display: none;
+  text-align: center;
+  opacity: 0;
+  opacity: 0;
+  transition: opacity 1s;
+  display: none;
 }
 
 #menu-h ul:hover li {
-    text-align: center;
-    opacity : 1;
-    display: block;
+  text-align: center;
+  opacity: 1;
+  display: block;
 }
 
 #menu-h ul li a {
-    color: #FFF;
-    padding: 5px;
-    display: inline-block;
-    text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
 }
 
+/* Footer */
 footer {
-    background-color: #004643;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-
+  background-color: #004643;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
 }
 
 footer .telegram {
-    width: 16px;
-    margin-right: 4px;
+  width: 16px;
+  margin-right: 4px;
 }
 
 footer a {
-    font-size: 16px;
-    align-items: center;
-    display: flex;
-    color: #f9bc60;
-    padding-left: 1rem;
-    margin-bottom: 4px;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  color: #f9bc60;
+  margin-bottom: 4px;
 }
-
 
 footer p {
-    font-size: 12px;
-    color: #abd1c6;
+  font-size: 12px;
+  color: #abd1c6;
 }
 
-@media (min-width: 768px){
+/* Agro */
+.section-agro-1 {
+  display: flex;
+  justify-content: center;
+}
+.card-agro-1 {
+  background-image: url("../img/agro/banner-agricultura.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 50px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 50px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 50px -3px rgba(0, 0, 0, 0.75);
+}
 
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
 
-    body {
-        margin-top: 64px;
-    }
+.section-agro-2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 68, 66, 1);
+  padding: 1rem;
+  padding-top: 1.5rem;
+  color: white;
+}
 
-    .img-rounded {
-        width: 70px;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: 8px;
-        left: 8px;
-        align-items: center;
-        border-radius: 50%;
-        border: black 1px solid;
-    }
-    
-    #logo-rounded {
-        width: 55px;
-        height: 60px;
-    }
+.margem-p {
+  margin: 1.5rem;
+}
 
+.margem-h1 {
+  margin: 0.5rem;
+}
 
+/* Desktop and tablets */
+@media (min-width: 768px) {
+  body {
+    margin-top: 64px;
+  }
 
-    header {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        background-color: #004643;
-        width: 100%;
-        height: 64px;
-    }
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
 
-    .div-logo {
-        width: 64px;
-        display: flex;
-        justify-content: start;
-    }
+  p {
+    font-size: 24px;
+    font-weight: 400;
+  }
 
-    #menu-h{
-        background-color: #004643;
-    }
+  .img-rounded {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    align-items: center;
+    border-radius: 50%;
+    border: black 1px solid;
+  }
 
-    #menu-h ul {
-        max-width: 800px;
-        list-style: none;
-        padding: 0;
-        position: relative;
-        top: 0px;
-        width: 100%;
-    }
+  #logo-rounded {
+    width: 55px;
+    height: 60px;
+  }
 
-    #menu-h ul:hover{
-        max-width: 800px;
-        list-style: none;
-        padding: 0;
-        position: relative;
-        top: 0px;
-        width: 100%;
-    }
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #004643;
+    width: 100%;
+    height: 64px;
+  }
 
+  .div-logo {
+    width: 64px;
+    display: flex;
+    justify-content: start;
+  }
 
-    #menu-h ul div {
-        display: none;
-    }
+  #menu-h {
+    background-color: #004643;
+  }
 
-    #menu-h ul li {
-        opacity : 1;
-        display: inline;
-    }
+  #menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    top: 0px;
+    width: 100%;
+  }
 
-    #menu-h ul:hover li {
-        display: inline;
-    }
+  #menu-h ul:hover {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    top: 0px;
+    width: 100%;
+  }
 
-    #menu-h ul li a {
-        color: #FFF;
-        padding: 20px;
-        display: inline-block;
-        text-decoration: none;
-        transition: background .4s;
-    }
+  #menu-h ul div {
+    display: none;
+  }
 
-    #menu-h ul li a:hover {
-        background-color: #f9bc60c5;
-    }
+  #menu-h ul li {
+    opacity: 1;
+    display: inline;
+  }
 
-    .section-h-1, .section-h-2, .section-h-3 {
-        padding: 64px;
-        display: grid;
-        grid-template-columns: 4fr 3fr;
-    }
+  #menu-h ul:hover li {
+    display: inline;
+  }
 
-    .align-start {
-        align-self: flex-start;
-    }
+  #menu-h ul li a {
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background 0.4s;
+  }
 
-    .section-h-1 h1,.section-h-2 h1,.section-h-3 h1 {
-        font-size: 48px;
-        font-weight: 700;
-    }
+  #menu-h ul li a:hover {
+    background-color: #f9bc60c5;
+  }
 
-    .indent-1 {
-        text-indent: 1rem;
-    }
+  .section-h-1,
+  .section-h-2,
+  .section-h-3 {
+    padding: 64px;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+  }
 
-    .section-h-1 img, .section-h-2 img, .section-h-3 img {
-        width: 100%;
-    }
+  .align-start {
+    align-self: flex-start;
+  }
 
-    .section-h-3 p, .section-h-2 p {
-        padding-right: 2rem;
-    }
+  .section-h-1 h1,
+  .section-h-2 h1,
+  .section-h-3 h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
 
-    footer {
-        flex-direction: row;
-    }
+  .indent-1 {
+    text-indent: 1rem;
+  }
+
+  .section-h-1 img,
+  .section-h-2 img,
+  .section-h-3 img {
+    width: 100%;
+  }
+
+  .section-h-3 p,
+  .section-h-2 p {
+    padding-right: 2rem;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+  /* Agro */
+  .card-agro-1 {
+    background-image: url("../img/agro/banner-agricultura.jpg");
+    backdrop-filter: blur(20px);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    background-size: cover;
+  }
+
+  .bg-text {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card-agro-2 {
+    padding: 5rem;
+  }
+
+  .margem-p {
+    margin: 1rem;
+  }
+  .margem-h1 {
+    margin: 1rem;
+  }
+
+  .section-agro-2 {
+    padding: 5rem;
+    color: white;
+    background: rgba(34, 68, 66, 1);
+    -webkit-box-shadow: inset 0px 0px 300px -144px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 300px -144px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 300px -144px rgba(0, 0, 0, 0.75);
+  }
+  /**/
 }
