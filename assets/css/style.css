@@ -469,9 +469,17 @@ footer p {
 }
 
 .cards-cultivo {
-  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .card-cultivo {
   background-color: #004643;
+  width: 200px;
+  height: 100px;
 }
+}
+/* Desktops */
+@media (min-width: 768px) {
+
 }
