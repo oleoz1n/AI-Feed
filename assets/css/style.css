@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
 
-
 /*ROOT*/
 :root {
   --color1: #abd1c6;
@@ -276,8 +275,6 @@ footer p {
   margin: 0.5rem;
 }
 
-
-
 /* Cultivo */
 .main-cultivo {
   background-color: var(--color1);
@@ -293,12 +290,13 @@ footer p {
 }
 
 .card-cultivo h2 {
-  color:#fffffe;
+  color: #fffffe;
 }
 
 .card-cultivo img {
   width: 100px;
   height: 100px;
+  border-radius: 10px;
 }
 
 .h2-img {
@@ -495,29 +493,39 @@ footer p {
     box-shadow: inset 0px 0px 300px -144px rgba(0, 0, 0, 0.75);
   }
   /* Cultivo */
-.main-cultivo {
-  background-color: var(--color1);
-  padding: 5rem;
-}
+  .main-cultivo {
+    padding: 1rem;
+  }
 
-.cards-cultivo {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.card-cultivo {
-  background-color: #004643;
-  width: 40%;
-  margin: 10px;
-}
+  .cards-cultivo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-cultivo {
+    background-color: #004643;
+    width: 100%;
+    padding: 2rem;
+    margin: 10px;
+  }
+  .card-cultivo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
 }
 /* Desktops */
 @media (min-width: 902px) {
+  /* Cultivo */
+
+  .main-cultivo {
+    background-color: var(--color1);
+    padding: 5rem;
+  }
+
   .card-cultivo {
     background-color: #004643;
-    width: 40%;
-    padding: 2rem;
-    margin: 10px;
+    width: 40rem;
   }
 }
