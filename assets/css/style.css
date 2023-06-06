@@ -435,6 +435,7 @@ footer p {
   color: var(--fontp-color2)
 }
 
+
 /* Desktop and tablets */
 @media (min-width: 768px) {
   body {
