@@ -1,0 +1,85 @@
+/* Cultivo */
+.main-cultivo {
+  background-color: var(--color1);
+  padding: 1rem;
+}
+
+.main-cultivo h1 {
+  color: var(--fonth1-color1);
+}
+.main-cultivo p {
+  color: var(--fontp-color1);
+}
+
+.card-cultivo {
+  border-radius: 3px;
+  background-color: #004643;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.cards-cultivo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-cultivo p {
+  color: #abd1c6;
+}
+
+.card-cultivo h2 {
+  color: #fffffe;
+}
+
+.card-cultivo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: black 4px solid;
+}
+
+.h2-img {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  /* Cultivo */
+  .main-cultivo {
+    padding: 1rem;
+  }
+
+  .cards-cultivo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-cultivo {
+    width: 100%;
+    padding: 2rem;
+  }
+  .card-cultivo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 902px) {
+  /* Cultivo */
+  .main-cultivo {
+    background-color: var(--color1);
+    padding: 5rem;
+  }
+
+  .card-cultivo {
+    background-color: #004643;
+    width: 40rem;
+  }
+}
