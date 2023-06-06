@@ -160,7 +160,7 @@ nav {
   background-color: #fff;
   display: block;
   margin: 8px;
-  transition: width 2s ease, margin-left 2s ease;
+  transition: width .5s ease, margin-left .5s ease;
 }
 
 div:hover .barrinha-menu:nth-child(2) {
@@ -170,7 +170,7 @@ div:hover .barrinha-menu:nth-child(2) {
 div:hover .barrinha-menu {
   width: 35px;
 
-  transition: width 2s ease, margin-left 2s ease;
+  transition: width .5s ease, margin-left .5s ease;
 }
 
 #menu-h ul li {
