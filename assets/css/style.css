@@ -232,9 +232,10 @@ footer {
   padding: 1.5rem;
 }
 
-footer .telegram {
+footer .github {
   width: 16px;
   margin-right: 4px;
+  gap: 2px;
 }
 
 footer a {
@@ -413,8 +414,6 @@ footer p {
   width: 12rem;
 }
 
-
-
 .ul-ia {
   padding-left: 1rem;
 }
@@ -422,6 +421,10 @@ footer p {
 .ul-ia div {
   margin-top: 1rem;
   gap: 8px;
+}
+
+.ul-ia li {
+  font-weight: 500;
 }
 
 .section-ia-1 p, .section-ia-1 li,  .section-ia-3 p, .section-ia-5 p{
