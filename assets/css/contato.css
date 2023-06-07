@@ -32,6 +32,12 @@
   width: 100%;
 }
 
+.section-contato-1  #duvida{
+  border-radius: 8px;
+  height: 6rem;
+  width: 100%;
+}
+
 .radio {
   display: flex;
   justify-content: center;
@@ -53,6 +59,17 @@
   background-color: #f9bc60;
   color: #001e1d;
   font-weight: 500;
+}
+
+input {
+  padding-left: 4px;
+}
+
+textarea {
+  padding: 4px;
+  border-radius: 8px;
+  height: 4rem;
+  width: 100%;
 }
 
 /* Desktops and Smartphones*/
